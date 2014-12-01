@@ -60,10 +60,15 @@ class tLang extends tLangHandlers {
 	public static function get ($value, array $args = null, $filters = null) {
 		
 		# Start Handler class
-		$Handlers = new tLangHandlers;
+		$handlers = new tLangHandlers;
 		
 		# Print result by Handlers Class
-		return $Handlers->decompose($value)->getLangContent()->editVars($args)->filter($filters)->getResult();
+		return $handlers
+			->decompose($value)
+			->getLangContent()
+			->editVars($args)
+			->filter($filters)
+			->getResult();
 
 	}
 
@@ -76,10 +81,10 @@ class tLang extends tLangHandlers {
 	private function updateVarFilesContent ($path) {
 
 		# Start FilesControl class
-		$FilesControl = new tLangFilesControl;
+		$filesControl = new tLangFilesControl;
 
 		# Load files content
-		$output = $FilesControl->loadFilesContent($path);
+		$output = $filesControl->loadFilesContent($path);
 
 		# Set $output to $filesContent
 		parent::$filesContent = $output;
@@ -94,7 +99,7 @@ class tLang extends tLangHandlers {
 	 */
 	public function __construct ($path) {
 
-		if(empty($path))
+		if (empty($path))
 			throw new tLangException('ep');
 
 		# Update $filesContent
