@@ -2,6 +2,7 @@ tLang
 =====
 
 Simple PHP language management class.
+Developed by @tankotun (Taner Tuncer)
 
 ## Nedir?
 Projelerinize çoklu dil desteği ekleyebilmenizi sağlayan açık kaynak PHP sınıfıdır.
