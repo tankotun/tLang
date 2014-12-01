@@ -8,10 +8,10 @@
 require "tLang/tLang.class.php";
 
 # Path
-new tLang('langFiles');
+new tLang('LANG_FILES_DIR_PATH');
 
 # Active lang
-tLang::set('lang', 'tr');
+tLang::set('lang', 'SELECTED_LANG');
 
 # Default lang
-tLang::set('defaultLang', 'en');
+tLang::set('defaultLang', 'DEFAULT_LANG');
