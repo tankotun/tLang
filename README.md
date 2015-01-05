@@ -1,6 +1,8 @@
 tLang
 =====
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/tanertuncer/tLang?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Simple PHP language management class.
 Developed by @tankotun (Taner Tuncer)
 
